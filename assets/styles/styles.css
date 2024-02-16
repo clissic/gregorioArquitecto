@@ -32,7 +32,7 @@ body {
   border: solid whitesmoke 3px;
   width: calc(100vw - 6vh - 12px);
   height: calc(94vh - 12px);
-  margin: 3vh 3vh;
+  margin: 3.6vh auto;
   padding: 3px;
   position: relative;
   z-index: 1;
@@ -238,6 +238,7 @@ span:hover + .wrap .a-menu,
 }
 
 .main-title-footer {
+  font-weight: 100;
   font-size: 1.5rem;
   text-align: justify;
 }
@@ -313,7 +314,8 @@ span:hover + .wrap .a-menu,
   }
 
   .main-title h2 {
-    font-size: 1.5rem;
+    margin-top: 2vh;
+    font-size: 1rem;
   }
 
   .footer {
@@ -359,7 +361,16 @@ span:hover + .wrap .a-menu,
     width: 100%;
   }
 
+  .left-div {
+    display: none;
+  }
+
   .right-div {
     column-gap: 1rem;
+    font-size: .6rem;
+  }
+
+  .right-div img {
+    width: 6vw;
   }
 }
