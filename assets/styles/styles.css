@@ -6,25 +6,23 @@
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(
-        20px
-      );
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .fade-in {
-    animation: fadeIn 1.1s ease-in-out;
-  }
+  animation: fadeIn 1.1s ease-in-out;
+}
 
 body {
   background-color: #0a0a0a;
@@ -97,7 +95,7 @@ body {
   top: 0;
   width: 47.5%;
   height: 47.5%;
-  overflow:hidden;
+  overflow: hidden;
   transform: scale(0.5) translateZ(0px);
   background: #0a0a0a;
 }
@@ -231,64 +229,131 @@ span:hover + .wrap .a-menu,
 /* FOOTER */
 
 .footer {
+  margin: 1.5vh 0vw;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.main-title-footer {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.main-title-footer strong {
+  font-size: 1.9rem;
+}
+
+.footer-div {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2vw;
+  width: 30%;
+  align-items: center;
+  font-size: small;
+}
+
+.mid-div {
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-div i {
+  font-size: 1.5rem;
+}
+
+.mid-div a {
+  cursor: pointer;
+}
+
+.right-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  column-gap: 1vw;
+}
+
+.right-div-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-div img {
+  width: 2.5rem;
+}
+
+.JPC-logo {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+@media (max-width: 1023px) {
+  .round-menu {
+    margin: -14vw;
+  }
+
+  .left-div {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .round-menu {
+    z-index: 2;
+    margin: -10vh;
+  }
+
+  .main-title h1{
+    font-size: 3.5rem;
+  }
+
+  .main-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer {
     margin: 1.5vh 0vw;
     bottom: 0;
     position: absolute;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 2vw;
     width: 100%;
-    justify-content: space-around;
-}
+  }
 
-.main-title-footer {
-    font-size: 1.5rem;
-    text-align: justify;
-}
-
-.main-title-footer strong {
-    font-size: 1.9rem;
-}
-
-.footer-div {
-    display: flex;
+  .left-div {
+    width: 100%;
     flex-direction: row;
-    column-gap: 2vw;
-    width: 30%;
-    align-items: center;
-    font-size: small;
-}
-
-.mid-div {
     justify-content: center;
-    align-items: center;
+  }
+
+  .mid-div {
+    width: 50%;
+  }
+
+  .right-div {
+    width: 50%;
+    justify-content: center;
+  }
 }
 
-.mid-div i {
-    font-size: 1.5rem;
-}
+@media (max-width: 499px) {
+  .round-menu {
+    z-index: 2;
+    margin: 0vh;
+  }
 
-.mid-div a {
-    cursor: pointer;
-}
-
-.right-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-items: center;
-    column-gap: 1vw;
-}
-
-.right-div-sub {
-    display: flex;
+  .footer {
     flex-direction: column;
-    justify-content: center;
-}
+  }
 
-.right-div img {
-    width: 2.5rem;
-}
-
-.JPC-logo {
-    text-decoration: none;
-    color: whitesmoke;
+  .left-div, .mid-div, .right-div{
+    width: 100%;
+  }
 }
