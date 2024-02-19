@@ -69,8 +69,8 @@ body {
 }
 
 .main-title h1 {
-  font-weight: 100;
-  font-size: 8vh;
+  font-weight: bold;
+  font-size: 10vh;
 }
 
 .main-title a {
@@ -81,7 +81,6 @@ body {
 .main-title h2 {
   font-weight: 100;
   font-size: 3vh;
-  letter-spacing: 0.5rem;
 }
 
 .round-menu {
@@ -138,7 +137,7 @@ body {
 }
 
 .a-menu:nth-child(2) div {
-  background-image: url("../images/menu4.jpg");
+  background-image: url("../images/menu3.jpg");
   background-position: center;
 }
 
@@ -150,7 +149,7 @@ body {
 }
 
 .a-menu:nth-child(3) div {
-  background-image: url("../images/menu3.jpg");
+  background-image: url("../images/menu4.jpg");
   background-position: center;
 }
 
@@ -249,9 +248,10 @@ span:hover + .wrap .a-menu,
 }
 
 .main-title-footer {
-  font-weight: 100;
   font-size: 1.5rem;
-  text-align: justify;
+  width: 20%;
+  min-width: 7rem;
+  word-spacing: -1rem;
 }
 
 .footer-div {
@@ -261,6 +261,10 @@ span:hover + .wrap .a-menu,
   width: 30%;
   align-items: center;
   font-size: small;
+}
+
+.left-div {
+  justify-content: start;
 }
 
 .mid-div {
