@@ -5,9 +5,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
-  margin: 0;
+/* FUENTES */
+
+@font-face {
+  font-family: "LeagueSpartan VariableFont";
+  src: url("../fonts/LeagueSpartan-VariableFont.ttf")
 }
+
+/* FIN FUENTES */
 
 @keyframes fadeIn {
   from {
@@ -18,6 +23,10 @@ p {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+p {
+  margin: 0;
 }
 
 .fade-in {
@@ -68,9 +77,12 @@ body {
   margin: 2vh 0 1vh 0;
 }
 
-.main-title h1 {
+.main-title h1, .main-title h1 a {
   font-weight: bold;
   font-size: 10vh;
+  font-family: "LeagueSpartan VariableFont";
+  margin-bottom: -1.5rem;
+  letter-spacing: -0.4rem;
 }
 
 .main-title a {
@@ -81,6 +93,7 @@ body {
 .main-title h2 {
   font-weight: 100;
   font-size: 3vh;
+  margin-left: 5rem;
 }
 
 .round-menu {
@@ -89,7 +102,7 @@ body {
 }
 
 .wrap {
-  position: relative;
+/*   position: relative; */
   width: 80vmin;
   height: 80vmin;
   margin: 0 auto;
@@ -248,10 +261,16 @@ span:hover + .wrap .a-menu,
 }
 
 .main-title-footer {
-  font-size: 1.5rem;
-  width: 20%;
-  min-width: 7rem;
-  word-spacing: -1rem;
+  font-size: 4rem;
+  margin: 0;
+  padding: 0 1rem 0 0;
+  word-spacing: -2rem;
+  height: 5rem;
+}
+
+.main-title-footer strong {
+  font-family: "LeagueSpartan VariableFont";
+  font-size: 5rem;
 }
 
 .footer-div {
@@ -265,11 +284,12 @@ span:hover + .wrap .a-menu,
 
 .left-div {
   justify-content: start;
+  align-items: center;
 }
 
 .mid-div {
   justify-content: center;
-  align-items: center;
+  align-items: end;
 }
 
 .mid-div i {
@@ -281,17 +301,16 @@ span:hover + .wrap .a-menu,
 }
 
 .right-div {
-  display: flex;
-  flex-direction: row;
+  align-items: end;
   justify-content: end;
-  align-items: center;
-  column-gap: 1rem;
 }
 
-.right-div-sub {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.right-div img {
+  margin-bottom: .5rem;
+}
+
+.right-div a {
+  padding-left: 1rem;
 }
 
 .right-div img {
@@ -317,16 +336,22 @@ span:hover + .wrap .a-menu,
   .mid-div {
     align-items: end;
   }
+
+  .right-div {
+    align-items: end;/* 
+    margin-bottom: .5rem; */
+  }
 }
 
 @media (max-width: 767px) {
   .round-menu {
     z-index: 2;
-    margin: -15vh;
+    margin-top: 8vh;
   }
 
   .main-title h1{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    margin-bottom: -1.5rem;
   }
 
   .main-title h2 {
@@ -340,37 +365,28 @@ span:hover + .wrap .a-menu,
     position: absolute;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    row-gap: 2vw;
     width: 100%;
   }
 
   .left-div {
-    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 1rem;
   }
 
-  .mid-div {
-    width: 50%;
-  }
-
-  .right-div {
-    width: 50%;
-    justify-content: center;
-    column-gap: 1rem;
+  .right-div a{
+    padding: 0 1rem;
   }
 }
 
 @media (max-width: 499px) {
   .round-menu {
     z-index: 2;
-    margin: -10vh;
   }
 
   .footer {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .left-div, .mid-div, .right-div{
@@ -381,9 +397,22 @@ span:hover + .wrap .a-menu,
     display: none;
   }
 
-  .right-div {
+  .mid-div {
+    display: flex;
+    flex-direction: row;
     column-gap: 1rem;
-    font-size: .6rem;
+    justify-content: start;
+    margin-left: 1rem;
+  }
+
+  .right-div {
+    justify-content: end;
+    margin-right: 1rem;
+  }
+
+  .right-div a {
+    padding: 0;
+    margin: 0;
   }
 
   .right-div img {
