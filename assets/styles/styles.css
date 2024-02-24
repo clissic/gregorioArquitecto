@@ -281,7 +281,12 @@ span:hover + .wrap .a-menu,
 .habilitaciones {
   display: flex;
   flex-direction: row;
-  height: 60vh;
+  height: 55vh;
+  overflow-y: scroll;
+}
+
+.habilitaciones::-webkit-scrollbar {
+  display: none;
 }
 
 .hab-first {
@@ -301,6 +306,7 @@ span:hover + .wrap .a-menu,
 .hab-sec {
   background-image: url(../images/menu1.jpg);
   background-position-x: 30%;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 60vh;
 }
