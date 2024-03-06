@@ -111,7 +111,7 @@ body {
   font-size: 10vh;
   font-family: "LeagueSpartan VariableFont";
   margin-bottom: -1.5rem;
-  letter-spacing: -0.4rem;
+  letter-spacing: -5px;
 }
 
 .main-title a {
@@ -281,7 +281,7 @@ span:hover + .wrap .a-menu,
 .habilitaciones {
   display: flex;
   flex-direction: row;
-  height: 55vh;
+  height: 60vh;
   overflow-y: scroll;
 }
 
@@ -308,7 +308,7 @@ span:hover + .wrap .a-menu,
   background-position-x: 30%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  height: 55vh;
 }
 
 /* FOOTER */
